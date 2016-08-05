@@ -10,3 +10,6 @@ set -euo pipefail
 composer install
 npm install
 grunt
+
+# Build
+grunt build
