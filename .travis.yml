@@ -10,6 +10,8 @@ deploy:
   acl: public_read
   upload-dir: wpe-wc-toolbox
   local_dir: build
+  access_key_id: $access_key_id
+  secret_access_key: $secret_access_key
   on:
     repo: wpengine/wpe-wc-toolbox
     all_branches: true
