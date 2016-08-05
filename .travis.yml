@@ -10,7 +10,9 @@ deploy:
   acl: public_read
   upload-dir: wpe-wc-toolbox
   local_dir: build
-  all_branches: true
+  on:
+    repo: wpengine/wpe-wc-toolbox
+    all_branches: true
 env:
   global:
   - secure: TD31QwNFSFsdJoZvXmZOSKqbHkKsXQRvy1/saXCzwOjCOqMYBxnNgNcX0zeKaKXO8cxxtolO6t58WimdzljjbXFynBo1ckCXJnFo05SclIB9+m8wWVV1rWkmg4KyHS+Bu6HyPyL6I2JIrK0UJfa45g+Jr8nnAZhUmQdE+T20A0nfjkwSg++Z2828baITnaeABUbcq9TdHQMq9QWnbbvktQFGc7Jq7K+a8UwgAHm9gY+RcWcjL381tWD/Ta9xtyckL5KabejFy8JLNrP/+38cKgkkKLXkYdDxKq6Kqv8ua5vFOCwXha8nTUaxQes7TFTi01SLhQC4v3YZ2lCPlUCBPxlTKBq/4bpe4yQIa5gjyjo/DWm4L2/JRG91dhgVV4YLRN8XsB8uAT+qylareSNQLFORE0f7U2QF07MbuHz2bEGhqMGuXxcMHQlSsgTg/znTnwZNhe9bhkOfsvLHkreS4jsTPqFMy1x1JnnQ4Er8nE5/+SN96XlZoe0xbEyJ5S16RqNqike1lIIxX/9DfR/aTc63mkzBn2CnDKxbBX7MOVT5UDzFllC2eEYmFnZhWXWp+Q3ck36P6Z7Wuh7iEpmPST0aIp4yJAipb/hs6Ji3+Zmho8eQ/ojoZl2aiaDn05WBJr5/1zv+XT/k1DHH0lLvCq99/07umpO4FTNwHv78kME=
