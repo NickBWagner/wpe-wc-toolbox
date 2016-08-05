@@ -1,0 +1,14 @@
+{
+	"name": "wpengine/wc-toolbox",
+	"type": "wordpress-plugin",
+	"description": "WooCommerce Toolbox extension",
+	"require": {
+		"squizlabs/php_codesniffer": "^2.6",
+		"wp-coding-standards/wpcs": "dev-master"
+	},
+	"scripts": {
+		"post-update-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/",
+		"post-install-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/"
+	}
+}
+

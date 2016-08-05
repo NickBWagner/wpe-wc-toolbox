@@ -1,0 +1,8 @@
+{
+  "name": "wc-toolbox",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-phpcs": "^0.4.0",
+    "grunt-phplint": "0.0.8"
+  }
+}
