@@ -1,7 +1,16 @@
 language: php
-
 php:
-  - 7.0
-
+- 7.0
 script:
-  - ./build_and_test.sh
+- "./build_and_test.sh"
+deploy:
+  provider: s3
+  bucket: wpengine-wordpress-plugins
+  skip_cleanup: true
+  acl: public_read
+  upload-dir: wpe-wc-toolbox
+  local_dir: build
+env:
+  global:
+  - secure: TD31QwNFSFsdJoZvXmZOSKqbHkKsXQRvy1/saXCzwOjCOqMYBxnNgNcX0zeKaKXO8cxxtolO6t58WimdzljjbXFynBo1ckCXJnFo05SclIB9+m8wWVV1rWkmg4KyHS+Bu6HyPyL6I2JIrK0UJfa45g+Jr8nnAZhUmQdE+T20A0nfjkwSg++Z2828baITnaeABUbcq9TdHQMq9QWnbbvktQFGc7Jq7K+a8UwgAHm9gY+RcWcjL381tWD/Ta9xtyckL5KabejFy8JLNrP/+38cKgkkKLXkYdDxKq6Kqv8ua5vFOCwXha8nTUaxQes7TFTi01SLhQC4v3YZ2lCPlUCBPxlTKBq/4bpe4yQIa5gjyjo/DWm4L2/JRG91dhgVV4YLRN8XsB8uAT+qylareSNQLFORE0f7U2QF07MbuHz2bEGhqMGuXxcMHQlSsgTg/znTnwZNhe9bhkOfsvLHkreS4jsTPqFMy1x1JnnQ4Er8nE5/+SN96XlZoe0xbEyJ5S16RqNqike1lIIxX/9DfR/aTc63mkzBn2CnDKxbBX7MOVT5UDzFllC2eEYmFnZhWXWp+Q3ck36P6Z7Wuh7iEpmPST0aIp4yJAipb/hs6Ji3+Zmho8eQ/ojoZl2aiaDn05WBJr5/1zv+XT/k1DHH0lLvCq99/07umpO4FTNwHv78kME=
+  - secure: u+8vkNIXEbw0+Ag3DMWewGzoiigKRg4PSIzLQ57oUGzpvuMV2eJk5L9cOWBwL/rLzD5qIIK/d/GtllREEm9IvPHiUv7YUHOOtAR6khKNvrT5sxotO0bTMQuL6080GH/rMOmTImXZK8G8Vo3JvrwugWLRUEKHY9XdbTowaCt/XPPo1ipzKIN0+nKzqj5T6GctQykEuPs65pKToq9dyJiWLCXjdu6iwIMUcF8CLfm+XOnWER7Vfh/dUhwGuXwMxyeJnXGXsdgSOdZ+N74hr/XZcgG9zieO4eGJiFIOLu85lViia47LoS+CaUTC/gqbXWE1g/Hh8brXK5s7lyEyphCJTteLNHZ1Crwc0jSN6OWqCk3f1O5Om0PrYSvLxr2NhmSREAbxZqKbMWWhLhDWbMjTHUgi3zyjBjAoaOSdRr7eZ9drbp9ude+HizCWPWsWvQjOlqUipUk5cOmcLWc5ZdorhIyGZ05985qORGn4JOF09DTA+E1gLzom2IOSYpk/fJhHa4qZIbl6ekL0vIBDvyhiRo1m9BTpShxTxUNwy5JvkATzJUPv+xzCqJQvwphLVFAwzDlg1wFd2Bjgj1Nx5XkgubeaR3R91pP0/x8v+hbuCISyFb28WRyXejHpIOJK1wVCk/EC/TYANTE2UWFUbzB59tMnlkoIPrlZQwqBRsNhtek=
