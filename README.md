@@ -25,7 +25,9 @@ Enabling the KPI Log results in additional processing and storage, so we recomme
 
 ### Auto Logout
 
-This option automatically logs customers out of the site if they go to particular dynamic pages (cart, checkout, and account). Doing so minimizes the number of logged in users, making your site more performant. Use Auto Logout if you are willing to give up page personalization for site performance.
+This option automatically logs out your customers as they visit pages on your site. Logging out customers makes your site more performant by minimizing the number of logged in users (which reduces server load) and by eliminating personalization on dynamic pages (which improves cacheability).
+
+Auto Logout will not log out customers when they visit cart pages, checkout pages, and account pages. Enable Auto Logout only if you are willing to give up page personalization for site performance.
 
 ### Guest Attribution
 
